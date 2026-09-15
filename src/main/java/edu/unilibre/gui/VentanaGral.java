@@ -1,22 +1,14 @@
-package co.vinni.gui;
+package edu.unilibre.gui;
 
-import co.vinni.datos.Bicicleta;
-import co.vinni.datos.MetodoPago;
-import co.vinni.datos.Parqueadero;
-import co.vinni.datos.ReporteDiario;
-import co.vinni.operaciones.GestionParqueadero;
+import edu.unilibre.datos.Bicicleta;
+import edu.unilibre.datos.MetodoPago;
+import edu.unilibre.datos.Parqueadero;
+import edu.unilibre.datos.ReporteDiario;
+import edu.unilibre.operaciones.GestionParqueadero;
 
 import javax.swing.*;
 import java.awt.*;
 import java.time.format.DateTimeFormatter;
-
-/**
- * @author  : Vinni 2026
- *
- * Interfaz gráfica de la app de gestión de parqueadero de
- * bicicletas. Usa únicamente los métodos obtener/establecer de las
- * clases encapsuladas de "datos", nunca sus atributos directamente.
- */
 public class VentanaGral extends JFrame {
 
     private final GestionParqueadero servicio = new GestionParqueadero();

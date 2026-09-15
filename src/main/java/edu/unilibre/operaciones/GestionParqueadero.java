@@ -1,9 +1,9 @@
-package co.vinni.operaciones;
+package edu.unilibre.operaciones;
 
-import co.vinni.datos.Bicicleta;
-import co.vinni.datos.MetodoPago;
-import co.vinni.datos.Parqueadero;
-import co.vinni.datos.ReporteDiario;
+import edu.unilibre.datos.Bicicleta;
+import edu.unilibre.datos.MetodoPago;
+import edu.unilibre.datos.Parqueadero;
+import edu.unilibre.datos.ReporteDiario;
 
 import java.time.Duration;
 import java.time.LocalDate;

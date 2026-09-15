@@ -1,8 +1,8 @@
-package co.vinni.operaciones;
+package edu.unilibre.operaciones;
 
-import co.vinni.datos.Bicicleta;
-import co.vinni.datos.MetodoPago;
-import co.vinni.datos.Parqueadero;
+import edu.unilibre.datos.Bicicleta;
+import edu.unilibre.datos.MetodoPago;
+import edu.unilibre.datos.Parqueadero;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -10,14 +10,6 @@ import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * @author  : Vinni 2026
- *
- * 4 pruebas de la capa de operaciones del parqueadero de
- * bicicletas, verificando los requerimientos Rq01 a Rq05 sobre las
- * clases encapsuladas de "datos" (métodos obtener/establecer en
- * español).
- */
 public class GestionParqueaderoTest {
 
     private GestionParqueadero servicio;
