@@ -9,7 +9,7 @@ import edu.unilibre.operaciones.GestionParqueadero;
 import javax.swing.*;
 import java.awt.*;
 import java.time.format.DateTimeFormatter;
-public class VentanaGral extends JFrame {
+public class Main extends JFrame {
 
     private final GestionParqueadero servicio = new GestionParqueadero();
     private final Parqueadero parqueadero = new Parqueadero();
@@ -25,7 +25,7 @@ public class VentanaGral extends JFrame {
     private final DateTimeFormatter formatoHora =
             DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 
-    public VentanaGral() {
+    public Main() {
         setTitle("Gestión de Parqueadero de Bicicletas");
         setSize(950, 700);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -279,6 +279,6 @@ public class VentanaGral extends JFrame {
             System.err.println("No se pudo establecer el estilo del sistema.");
         }
 
-        SwingUtilities.invokeLater(() -> new VentanaGral().setVisible(true));
+        SwingUtilities.invokeLater(() -> new Main().setVisible(true));
     }
 }

@@ -52,7 +52,7 @@ public class GestionParqueaderoTest {
 
         Bicicleta salidaQuinceMin = servicio.registrarSalida(parqueadero, "111111111");
 
-        assertEquals(15 * GestionParqueadero.TARIFA_POR_MINUTO, salidaQuinceMin.obtenerValorCobrado());
+        assertEquals(15 * GestionParqueadero.tarifa_inicial, salidaQuinceMin.obtenerValorCobrado());
         assertSame(biciQuinceMin, salidaQuinceMin);
         assertTrue(salidaQuinceMin.estaPendientePago());
     }
@@ -67,7 +67,7 @@ public class GestionParqueaderoTest {
 
         double valorPagado = servicio.registrarPago(parqueadero, "333333333", MetodoPago.NEQUI);
 
-        double valorEsperado = 10 * GestionParqueadero.TARIFA_POR_MINUTO;
+        double valorEsperado = 10 * GestionParqueadero.tarifa_inicial;
         assertEquals(valorEsperado, valorPagado);
         assertEquals(MetodoPago.NEQUI, bici.obtenerMetodoPago());
         assertTrue(bici.estaPagada());

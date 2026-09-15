@@ -2,17 +2,6 @@ package edu.unilibre.datos;
 
 import java.time.LocalDateTime;
 
-/**
- * @author  : Vinni 2026
- *
- * Clase encapsulada: atributos privados con acceso mediante
- * métodos "obtener" (getters) y "establecer" (setters) en español.
- *
- * Representa una bicicleta mientras está dentro del parqueadero.
- * Se identifica con la cédula del dueño, el número de serie de la
- * bicicleta y su color (Rq01), y guarda además el tipo de
- * bicicleta que pide el Home del proyecto.
- */
 public class Bicicleta {
 
     private String cedulaDueño;

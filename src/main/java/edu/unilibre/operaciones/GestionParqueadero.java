@@ -9,18 +9,10 @@ import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-/**
- * @author  : Vinni 2026
- *
- * Capa de operaciones/reglas de negocio del parqueadero de
- * bicicletas. Usa los métodos obtener/establecer de las clases
- * encapsuladas de "datos" para registrar ingresos, salidas, pagos
- * y el reporte del día, siguiendo los requerimientos Rq01 a Rq05.
- */
 public class GestionParqueadero {
 
     /** Valor cobrado por cada minuto que la bicicleta permanece en el parqueadero (Rq03). */
-    public static final double TARIFA_POR_MINUTO = 1000.0;
+    public static final double tarifa_inicial = 1000.0;
 
     private final ReporteDiario reporteDelDia = new ReporteDiario(LocalDate.now());
 
@@ -77,7 +69,7 @@ public class GestionParqueadero {
         if (minutos < 1) {
             minutos = 1; // se cobra mínimo 1 minuto, aunque la salida sea casi inmediata
         }
-        double valor = minutos * TARIFA_POR_MINUTO;
+        double valor = minutos * tarifa_inicial;
         encontrada.establecerValorCobrado(valor);
 
         return encontrada;

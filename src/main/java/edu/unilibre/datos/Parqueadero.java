@@ -2,15 +2,6 @@ package edu.unilibre.datos;
 
 import java.util.Arrays;
 
-/**
- * @author  : Vinni 2026
- *
- * Clase encapsulada: atributo privado con acceso mediante métodos
- * "obtener" (getters) en español. El arreglo de bicicletas se
- * maneja de forma controlada dentro de la propia clase para no
- * exponer su referencia interna (encapsulamiento real, no solo
- * sintáctico).
- */
 public class Parqueadero {
 
     /** Cupos totales disponibles para bicicletas. */
